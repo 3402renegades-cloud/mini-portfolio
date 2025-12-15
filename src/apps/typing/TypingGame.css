@@ -1,0 +1,30 @@
+main.container{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#target{
+  user-select: none;
+  margin: 0 auto 14px;
+  padding: 18px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.297);
+  font-size: 28px;
+  letter-spacing: .5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .08s ease, background .12s ease;
+}
+
+#target:hover{ background: rgba(255,255,255,.09); }
+#target:active{ transform: scale(.99); }
+#target:focus{ outline: 2px solid rgba(122,162,255,.45); outline-offset: 2px; }
+
+#result, #best, #miss{
+  margin: 8px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}

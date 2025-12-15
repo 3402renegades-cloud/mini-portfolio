@@ -1,0 +1,102 @@
+:root { font-family: system-ui, sans-serif; }
+
+.shell { min-height: 100vh; }
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand { font-weight: 700; }
+.nav a { margin-left: 12px; text-decoration: none; }
+.nav a.active { text-decoration: underline; font-weight: 600; }
+.content { padding: 16px; }
+
+.card {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.card li {
+  margin: 0;
+}
+
+
+.card a {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1f4bd8;
+  background: #fafafa;
+}
+ 
+.card a:hover {
+  background: #f3f6ff;
+  border-color: #dbe4ff;
+  transform: translateY(-3px);
+}
+
+
+
+/* ===== Dark theme ===== */
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #0f1115;
+  color: #e7e7e7;
+}
+
+.shell {
+  min-height: 100vh;
+  /* background: #0f1115; */
+}
+
+.topbar {
+  border-bottom: 1px solid #2a2f3a;
+  background: #0b0d12;
+}
+
+.card {
+  background: #151a22;
+  border: 1px solid #2a2f3a;
+}
+
+.nav a {
+  color: #cfd6e6;
+}
+
+.nav a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
